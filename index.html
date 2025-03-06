@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Veículos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <p>Telefone: (XX) XXXX-XXXX | Endereço: Cidade - Estado</p>
+        </div>
+        <div class="navbar">
+            <h1>Joel Veículos</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#veiculos">Veículos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="whatsapp-contact"><a href="#">Contato Rápido Via Whatsapp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="PORTIFOLIO2.png" alt="Bem-vindo à Joel Veículos">
+        <div class="search-box">
+            <h2>Busque pelo seu novo veículo</h2>
+            <form id="searchForm">
+                <select name="marca" id="marca">
+                    <option value="">Marca</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                </select>
+                <select name="modelo" id="modelo">
+                    <option value="">Modelo</option>
+                </select>
+                <select name="ano" id="ano">
+                    <option value="">Ano</option>
+                </select>
+                <button type="submit">Buscar Veículo</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="veiculos" class="veiculos">
+        <h2>Novidades para você</h2>
+        <div class="carros" id="carros">
+            <!-- Carrossel de veículos -->
+            <div id="carrossel-container">
+                <div class="carrossel">
+                    <div id="carrossel-images"></div>
+                </div>
+                <button id="prev" class="navegacao">❮</button>
+                <button id="next" class="navegacao">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="quem-somos" class="quem-somos">
+        <h2>Quem Somos</h2>
+        <p>Somos uma concessionária comprometida em oferecer os melhores veículos com qualidade e segurança. Visite-nos e encontre o carro dos seus sonhos!</p>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Joel Veículos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

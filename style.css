@@ -1,0 +1,288 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #d50000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #d50000;
+}
+
+.navbar h1 {
+    color: #d50000;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #d50000;
+    color: white;
+}
+
+.whatsapp-contact a {
+    background-color: #25D366;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-contact a:hover {
+    background-color: #128C7E;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.search-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: -50px auto 0;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box h2 {
+    margin-bottom: 20px;
+    color: #d50000;
+}
+
+.search-box form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search-box select, .search-box button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-box button {
+    background-color: #d50000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #b00000;
+}
+
+/* Seção de Veículos */
+.veiculos {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#veiculos {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.carros {
+    position: relative;
+    margin-top: 20px;
+}
+
+#carrossel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrossel img {
+    width: 100%;
+    height: auto;
+}
+
+.navegacao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+
+.carros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carro {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.carro img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carro h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.carro p {
+    font-size: 16px;
+    color: #d50000;
+    font-weight: bold;
+}
+
+.carro a {
+    display: block;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #d50000;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.carro a:hover {
+    background-color: #b00000;
+}
+
+/* Seção Quem Somos */
+.quem-somos {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.quem-somos h2 {
+    margin-bottom: 20px;
+}
+
+/* Seção Contato */
+.contato {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contato input, .contato textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contato button {
+    padding: 10px;
+    background-color: #d50000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contato button:hover {
+    background-color: #b00000;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
